@@ -1,0 +1,72 @@
+AllCops:
+  TargetRubyVersion: 2.3
+  Include:
+    - "Rakefile"
+    - "config.ru"
+    - "lib/**/*.rake"
+  Exclude:
+    - "bundle/**/*"
+    - "vendor/**/*"
+    - "db/**/*"
+    - "script/**"
+    - "node_modules/**/*"
+    - "design/**/*"
+    - "bin/**"
+    - "*Gemfile*"
+
+Rails:
+  Enabled: true
+# Commonly used screens these days easily fit more than 80 characters.
+Metrics/LineLength:
+  Max: 120
+
+Metrics/AbcSize:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
+
+Metrics/ClassLength:
+  Enabled: false
+
+Metrics/CyclomaticComplexity:
+  Enabled: false
+
+Metrics/PerceivedComplexity:
+  Enabled: false
+
+Metrics/ParameterLists:
+  Exclude:
+    - "test/**/*"
+
+# Single quotes being faster is hardly measurable and only affects parse time.
+# Enforcing double quotes reduces the times where you need to change them
+# when introducing an interpolation. Use single quotes only if their semantics
+# are needed.
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+Style/IndentHash:
+  EnforcedStyle: consistent
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/Lambda:
+  Enabled: false
+
+Style/SpaceBeforeComma:
+  Enabled: false
+
+Style/AsciiComments:
+  Enabled: false
+
+Style/AccessorMethodName:
+  Exclude:
+    - "test/**/*"
