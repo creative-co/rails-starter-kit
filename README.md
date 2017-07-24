@@ -1,24 +1,14 @@
-# README
+# Rails starter kit
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* ditto - for syncing files
+* rubocop - ruby linter
+* eslint-prettier
+* lint-staged
 
-Things you may want to cover:
+* gem "dotenv-rails"
+* gem "retriable", require: "retriable/core_ext/kernel"
+* gem "rack-timeout" for production
+* gem "rack-utf8_sanitizer"
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Prerequisites
+npm install eslint@3.x babel-eslint@7 eslint-config-airbnb-base eslint-plugin-import --save-dev
