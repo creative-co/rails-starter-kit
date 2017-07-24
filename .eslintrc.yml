@@ -1,0 +1,31 @@
+env:
+  browser: true
+  commonjs: true
+  es6: true
+parser: 'babel-eslint'
+extends: 'airbnb-base'
+parserOptions:
+  sourceType: module
+rules:
+  strict: 0
+  indent:
+    - error
+    - 4
+  max-len:
+    - 2
+    - 120
+  linebreak-style:
+    - error
+    - unix
+  quotes:
+    - error
+    - double
+  semi:
+    - error
+    - always
+  import/no-extraneous-dependencies:
+    - off
+  import/no-unresolved:
+    - off
+  no-plusplus:
+    - off

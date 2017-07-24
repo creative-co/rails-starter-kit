@@ -1,0 +1,38 @@
+{
+  "name": "rails-starter-kit",
+  "version": "1.0.0",
+  "description": "* ditto - for syncing files * rubocop - ruby linter * eslint-prettier * lint-staged",
+  "main": "index.js",
+  "dependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^4.0.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.3.0",
+    "eslint-plugin-import": "^2.7.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^4.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cloudcastle/rails-starter-kit.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cloudcastle/rails-starter-kit/issues"
+  },
+  "homepage": "https://github.com/cloudcastle/rails-starter-kit#readme"
+}
