@@ -10,7 +10,7 @@ rules:
   strict: 0
   indent:
     - error
-    - 4
+    - 2
   max-len:
     - 2
     - 120
