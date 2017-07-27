@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
+ruby '2.4.1'
 gem 'rails', github: "rails/rails"
 gem 'arel', github: "rails/arel"
 
@@ -51,3 +52,5 @@ group :development, :test do
   gem 'pronto-slim', require: false
   gem 'pronto-scss', require: false
 end
+
+gem 'dotenv-rails', group: [:development, :test]

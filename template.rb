@@ -23,3 +23,12 @@ end
 
 get_from_repo ".rubocop.yml"
 
+gem 'dotenv-rails', group: [:development, :test]
+create_file ".env", "# NOT FOR SENSITIVE INFORMATION - Override .env.local instead."
+create_file ".env.local", ""
+append_file ".gitignore", ".env.local\n"
+
+insert_into_file "Gemfile", "ruby '#{RUBY_VERSION}'\n", before: /^ *gem 'rails'/, force: false
+append_file ".gitignore", ".ruby-version\n"
+create_file ".ruby-version", "#{RUBY_VERSION}\n"
+
