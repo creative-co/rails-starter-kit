@@ -40,5 +40,14 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 group :development, :test do
-  gem 'rubocop', require: false
+  gem 'pronto'
+  gem 'pronto-rubocop', require: false
+  gem 'pronto-flay', require: false
+  gem 'pronto-brakeman', require: false
+  gem 'pronto-dirty_words', require: false
+  gem 'pronto-fasterer', require: false
+  gem 'pronto-rails_best_practices', require: false
+  gem 'pronto-rails_schema', require: false
+  gem 'pronto-slim', require: false
+  gem 'pronto-scss', require: false
 end
