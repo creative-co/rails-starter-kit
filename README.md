@@ -1,14 +1,11 @@
 # Rails starter kit
 
-* ditto - for syncing files
-* rubocop - ruby linter
-* eslint-prettier
-* lint-staged
+## Change `template.rb`
 
-* gem "dotenv-rails"
-* gem "retriable", require: "retriable/core_ext/kernel"
-* gem "rack-timeout" for production
-* gem "rack-utf8_sanitizer"
+After you've made changes to `template.rb` apply this changes to current project before commiting:
 
-## Prerequisites
-npm install eslint@3.x babel-eslint@7 eslint-config-airbnb-base eslint-plugin-import --save-dev
+```
+DEBUG=yes bin/rails app:template LOCATION=./template.rb
+bundle install
+```
+
