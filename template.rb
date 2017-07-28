@@ -32,3 +32,4 @@ insert_into_file "Gemfile", "ruby '#{RUBY_VERSION}'\n", before: /^ *gem 'rails'/
 append_file ".gitignore", ".ruby-version\n"
 create_file ".ruby-version", "#{RUBY_VERSION}\n"
 
+get_from_repo "Procfile"
