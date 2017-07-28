@@ -54,3 +54,5 @@ group :development, :test do
 end
 
 gem 'dotenv-rails', group: [:development, :test]
+
+gem 'rack-canonical-host'
