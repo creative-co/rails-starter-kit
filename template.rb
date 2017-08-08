@@ -36,7 +36,7 @@ get_from_repo "Procfile"
 
 gem 'rack-canonical-host'
 insert_into_file "config.ru", before: /^ *run Rails.application/, force: false do <<-LINE
-use Rack::CanonicalHost, ENV['CANONICAL_HOST'], cache_control: 'no-cache' if ENV['CANONICAL_HOST']
+use Rack::CanonicalHost, ENV["CANONICAL_HOST"], cache_control: "no-cache" if ENV["CANONICAL_HOST"]
 LINE
 end
 
