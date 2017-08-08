@@ -1,5 +1,5 @@
 AllCops:
-  TargetRubyVersion: 2.3
+  TargetRubyVersion: 2.4
   Include:
     - "Rakefile"
     - "config.ru"
@@ -46,7 +46,7 @@ Metrics/ParameterLists:
 Style/StringLiterals:
   EnforcedStyle: double_quotes
 
-Style/IndentHash:
+Layout/IndentHash:
   EnforcedStyle: consistent
 
 Style/Documentation:
@@ -61,7 +61,7 @@ Style/ClassAndModuleChildren:
 Style/Lambda:
   Enabled: false
 
-Style/SpaceBeforeComma:
+Layout/SpaceBeforeComma:
   Enabled: false
 
 Style/AsciiComments:
